@@ -56,12 +56,30 @@ char c;
  }
 return ;
 }
+//"3——输入十个数后逆输出"
+void number()
+{
+int a[10];
+cout<<"请输入十个数："<<endl;
+for(int i=0;i<10;i++)
+{
 
+cin>>a[i];
+}
+cout<<"输出的十个数："<<endl;
+for(int i=9;i>=0;i--)
+{
+cout<<a[i]<<",";
+}
+cout<<endl;
+//system("pause");
+return ;
+}
 void menu()
 {
 cout<<"1——输出一个乘法表"<<endl;
 cout<<"2——输出学生的学号"<<endl;
-
+cout<<"3——输入十个数后逆输出"<<endl;
 cout<<"0——结束本次使用"<<endl;
 
 }
@@ -79,11 +97,8 @@ case 1:circulate();
 break;
 case 2:student();
 break;
-
-<<<<<<< HEAD
-=======
-
->>>>>>> homework2
+case 3:number();
+break;
 case 0:cout<<""<<endl;
 system("pause");
 return 0;
